@@ -1,0 +1,78 @@
+.form-attributes {
+    width: 550px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #bdc4c2;
+    border-radius: 10px;
+}
+
+/* Input field */
+.form-attributes input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Textarea */
+.form-attributes textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+
+/* Button */
+.form-attributes button {
+    display: block;
+    margin: 10px auto 0;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0d6efd;
+    color: white;
+    cursor: pointer;
+}
+
+.form-attributes button:hover {
+    background-color: #0b5ed7;
+}
+
+.form-attributes p {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.form-attributes label {
+    width: 150px;
+    margin-right: 1px;
+    text-align: right;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.form-attributes input,
+.form-attributes textarea {
+    flex: 1;
+    padding: 8px;
+}
+
+.form-attributes input.label{
+    text-align: left;
+}
+
+.space {
+    margin-bottom: 30px !important;
+}
