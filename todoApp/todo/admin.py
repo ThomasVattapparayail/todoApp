@@ -3,4 +3,6 @@ from .models import todo
 
 # Register your models here.
 
-admin.site.register(todo)
+@admin.register(todo)
+class TodoAdmin(admin.ModelAdmin):
+    list_display = ('id', 'todo', 'todo_dis', 'done')

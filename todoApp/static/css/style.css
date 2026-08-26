@@ -76,3 +76,8 @@
 .space {
     margin-bottom: 30px !important;
 }
+
+.todo-done {
+    text-decoration: line-through;
+    color: #888;
+}

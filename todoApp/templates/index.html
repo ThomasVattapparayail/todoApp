@@ -37,9 +37,17 @@
                     {% for d in form_data %}
                     <tr>
                         <td>{{d.id}}</td>
-                        <td>{{d.todo}}</td>
-                        <td>{{d.todo_dis}}</td>
+                        <td><span class="{% if d.done == 1 %}todo-done{% endif %}">{{ d.todo }}</span></td>
+                        <td><span class="{% if d.done == 1 %}todo-done{% endif %}">{{d.todo_dis}}</span></td>
                         <td>
+
+                            <form action="{% url 'done' d.id %}" method="POST">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-success btn-sm">
+                                    Done
+                                </button>
+                            </form>
+                            
                             <a href="{% url 'edit' d.id %}" class="btn btn-warning btn-sm">
                                 Edit
                             </a>

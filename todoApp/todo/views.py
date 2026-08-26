@@ -44,3 +44,13 @@ def delete(request, id):
         return redirect("index")
 
     return redirect("index")
+
+def done(request, id):
+    todo_data = get_object_or_404(todo, id=id)
+
+    if request.method == "POST":
+        todo_data.done = 1
+        todo_data.save()
+        return redirect("index")
+
+    return redirect("index")
